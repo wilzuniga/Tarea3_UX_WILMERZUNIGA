@@ -4,12 +4,16 @@ import './App.css';
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [todoList, setTodoList] = useState([]);
+  
 
   useEffect(() => {
     const savedTodoList = localStorage.getItem('todoList');
-    setTodoList(JSON.parse(savedTodoList));
-    
+    if (savedTodoList) {
+      setTodoList(JSON.parse(savedTodoList));
+    }
   }, []);
+
+  
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
