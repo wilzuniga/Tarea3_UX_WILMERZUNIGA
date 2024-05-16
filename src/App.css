@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+  display: flex;
+  background-color: #CDE8E5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #EEF7FF;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-button {
+  padding: 10px 20px;
+  background-color: #4D869C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.task-card {
+  background-color: #EEF7FF;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 20px;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: #4D869C;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
 }
